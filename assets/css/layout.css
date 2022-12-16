@@ -1,4 +1,31 @@
-body {
-  margin: 0; }
-  body #layout-main {
-    height: 100%; }
+body #layout-main {
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  overflow: scroll; }
+  body #layout-main #page-heading {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 52px;
+    margin-top: 1px; }
+  body #layout-main #feed-posts {
+    margin-top: -5px; }
+    body #layout-main #feed-posts #post-heading {
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      margin-left: 7px; }
+    body #layout-main #feed-posts #form-style {
+      margin-left: 7px; }
+      body #layout-main #feed-posts #form-style .text {
+        border: 1px rgba(0, 0, 0, 0.493) solid;
+        background-color: bisque;
+        padding: 4px; }
+      body #layout-main #feed-posts #form-style .sbmt {
+        background-color: rosybrown;
+        color: white;
+        border-radius: 8px;
+        padding: 4px;
+        border: 1px gray solid;
+        box-shadow: 4px 4px 4px; }

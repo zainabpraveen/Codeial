@@ -1,21 +1,23 @@
-#header-container {
-  font-size: 2rem;
-  font-weight: 700;
-  height: 80px;
-  width: 100%;
-  background-color: rgba(38, 38, 226, 0.774);
-  color: white;
-  list-style: none; }
-  #header-container ul {
-    float: right;
-    font-size: 25px; }
-    #header-container ul .sign-in-list {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      #header-container ul .sign-in-list .anchor {
-        color: white;
-        text-decoration: none;
-        margin-left: 7px; }
+body {
+  margin: 0; }
+  body #header-container {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(38, 38, 226, 0.774);
+    color: white;
+    list-style: none; }
+    body #header-container ul {
+      float: right;
+      font-size: 25px; }
+      body #header-container ul .sign-in-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        body #header-container ul .sign-in-list .anchor {
+          color: white;
+          text-decoration: none;
+          margin-left: 7px; }
