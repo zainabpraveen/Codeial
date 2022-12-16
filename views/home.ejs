@@ -1,4 +1,4 @@
-
+     <div class="main-container">
     <h1 id="page-heading">
         Codial <%=title %>
     </h1>
@@ -42,6 +42,12 @@
                 <ul id="post-comments-<%= post._id%>">
                 <% for (comment of post.comments){%> 
                     <p>
+                      <% if(locals.user && locals.user.id==comment.user.id){%>
+                        <small>
+                          <a href="/comments/destroy/<%=comment.id%>">Delete</a>
+                        </small>
+                          
+                        <%}%>
                         <%= comment.content%>
                         <br>
                       <small>
@@ -62,3 +68,4 @@
 
     </div>
 </section>
+     </div>

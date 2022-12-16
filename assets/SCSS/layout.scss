@@ -1,13 +1,15 @@
 body{
     // margin: 0;
     
-    // background-image:linear-gradient(to right,rosybrown, rgba(0, 255, 255, 0.644));
-    // background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
     #layout-main{
         height: 100%;
-        background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        overflow:scroll;
-
+        // background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        // overflow:scroll;
+        .main-container{
+            background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            overflow:scroll;
+            height: 100%;
         //Heading style
        #page-heading{
         text-align: center;
@@ -23,7 +25,8 @@ body{
        #feed-posts{
         margin-top: -5px;
         
-        //   background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        // background-image: url(https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        // overflow:scroll;
           
         #post-heading{
             color: white;
@@ -42,7 +45,7 @@ body{
                     padding: 4px;
                 }
                 .sbmt{
-                    background-color: rosybrown;
+                    background-color:black;
                     color: white;
                     border-radius: 8px;
                     padding: 4px;
@@ -56,4 +59,6 @@ body{
     }
 
 }
+}
+
 }
