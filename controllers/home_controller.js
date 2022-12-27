@@ -17,7 +17,8 @@ module.exports.home = async function(req, res){
 
     });
 
-    let users =await User.find({}) 
+    let users =await User.find({})
+    
 
     return  res.render('home', {
         title: "Codial | Home",
@@ -29,8 +30,6 @@ module.exports.home = async function(req, res){
      console.log('Error',err);
      return;
     }
-
-    //populate the user of the each post
 
 };
 

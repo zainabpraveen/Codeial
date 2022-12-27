@@ -1,35 +1,40 @@
-body{
-    margin: 0;
+ 
 #header-container{
-    font-size: 2rem;
-    font-weight: 700;
+   display: flex;
+   justify-content: space-between;
     height: 80px;
     width: 100%;
     background-color: rgba(38, 38, 226, 0.774);
-    color: white;
-    list-style: none;
+    min-width:500px ;
     
-    ul{
-        float: right;
-        font-size: 25px;
-       
+    #heading{
+        margin-top: 14px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .auto-links{
+        margin-top: 14px;
         
-    .sign-in-list {
+    ul{
+        margin: 5% 5px;
+        display: flex;
         list-style: none;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        
          
-        .anchor{
-            color: white;
-            text-decoration: none;
-            margin-left: 7px;
+       li{
+        font-size: 1.5rem;
+        margin-right: 10px;
+       }
         }
     
     }
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
     
-}
+
     
-}
