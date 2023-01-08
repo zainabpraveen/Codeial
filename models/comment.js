@@ -8,7 +8,7 @@ const commentSchema = new mongoose.Schema({
    //comment belong to a user
 
    user :{
-    type : mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
    },
    post: {
