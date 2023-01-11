@@ -1,6 +1,7 @@
 const User= require('../models/user');
 const fs = require('fs');
 const path = require('path');
+const otp = require('../models/otp');
 //let's keep it same as before 
 module.exports.profile=function(req,res){
    User.findById(req.params.id, function(err, user){
@@ -124,3 +125,5 @@ module.exports.destroySession = function(req,res){
 // req.flash('success','You have logged out!');
 
 }
+
+
