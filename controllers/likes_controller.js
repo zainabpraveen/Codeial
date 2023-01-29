@@ -1,7 +1,8 @@
 const Like = require('../models/like');
 const Comment = require('../models/comment');
 const Post = require('../models/post');
-
+const Friendship = require('../models/friendship');
+const User = require('../models/user');
 
 module.exports.toggleLike = async function( req, res){
 
@@ -56,4 +57,19 @@ module.exports.toggleLike = async function( req, res){
       })       
     }
 
+}
+
+
+module.exports.toggleFriend = async function(req, res){
+   try{
+      //  let  user= await User.findById('req.params.id');
+         
+
+   }catch(err){
+      console.log(err);
+      return res.json(500,{
+        message:'internal Server Error'
+      })   
+
+   }
 }

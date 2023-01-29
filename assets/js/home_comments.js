@@ -1,7 +1,5 @@
 //Let's implement this via classes
 
-const { toggleLike } = require("../../controllers/likes_controller");
-
 //this class would be initialized for every post on the page
 
 //1. when the page loads 
@@ -45,7 +43,7 @@ class PostComments{
 
 //CHANGE ::enable the functionality of the toggle like button o the new comment 
 
-         new toggleLike($(' .toggle-like-button', newComment));
+         new ToggleLike($(' .toggle-like-button', newComment));
          
             new Noty({
               theme: 'relax',
@@ -80,8 +78,6 @@ class PostComments{
       <a class="toggle-like-button" data-likes="<%=comment.likes.length%>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment" >
         0 Likes
       </a> 
-      
-      
       </small>  
         
       </p>

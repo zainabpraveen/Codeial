@@ -1,4 +1,4 @@
-const { toggleLike } = require("../../controllers/likes_controller");
+
 
 {
    //method to submit the form using AJAX

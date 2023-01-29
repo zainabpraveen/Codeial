@@ -18,4 +18,9 @@
       <p> <%=profile_user.name %></p>
    <p> <%=profile_user.email %></p>
 
+   <a class="toggle-friends-button" data-friends="<%=profile_user.length %>"
+    href="/likes/toggle-friends/?id=<%=profile_user._id%>&type=Post">
+     Add Friends
+  </a>
+
    <%}%>
