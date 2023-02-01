@@ -34,7 +34,7 @@ class ChatEngine{
         self.socket.emit('send_message', {
           message: msg,
           user_email: self.userEmail,
-          chatroom: 'codial'
+          chatroom: 'codeial'
         });
       }
     });
@@ -62,7 +62,7 @@ class ChatEngine{
 
       $('#chat-messages-list').append(newMessage);
 
-    })
+    });
 
   }
 

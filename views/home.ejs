@@ -34,6 +34,7 @@
     
     <% } %>
  </section>
+ 
  <%- include('_chat_box') -%> 
  </div>
 <!-- importing this script for creating the comments -->
@@ -53,7 +54,7 @@
  <script src="/js/chat_engine.js"></script>
  <% if(locals.user) {%> 
  <script>
-  new ChatEngine('user-chat-box','<%= locals.user.email %>');
+  new ChatEngine('user-chat-box', '<%= locals.user.email %>');
  </script>
 
  <%}%>
