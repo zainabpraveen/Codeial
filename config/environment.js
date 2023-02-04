@@ -1,10 +1,20 @@
+const fs = require('fs');
+const rfs= require('rotating-file-stream');
+const path = require ('path');
 
+const logDirectory = path.join(__dirname, '../production_logs');
+fs.existsSync(logDirectory)||fs.mkdirSync(logDirectory);
 
-const devlopment = {
-    name: 'devlopment',
+const accessLogStream = rfs.createStream('access.log',{
+   interval: '1d',
+   path: logDirectory
+});
+
+const development = {
+    name: 'development',
     asset_path: '/assets',
     session_cookie_key: 'ArcauEIB9OVXZuLI8yY7ImYnFGAsmayy',
-    db: 'codeial_devlopment',
+    db: 'codeial_development',
     smtp: {
         service: 'gmail',
          host: 'smtp.gmail.com',
@@ -21,6 +31,10 @@ google_client_id: "976994256334-lqjk1q2hoslgoqns5vbru3g57qcldrtu.apps.googleuser
 google_client_secret: "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",
 google_callback_url: "http://localhost:8000/users/auth/google/callback",
 jwt_secret:  'codeial',
+morgan: {
+   mode: 'dev',
+   options: {stream: accessLogStream}
+}
 
 }
 
@@ -46,8 +60,12 @@ google_client_id: process.env.CODEIAL_GOOGLE_CLIENT_ID,
 google_client_secret: process.env.CODEIAL_GOOGLE_CLIENT_SECRET,
 google_callback_url: process.env.CODEIAL_GOOGLE_CALLBACK_URL,
 jwt_secret: process.env.CODEIAL_JWT_SECRET,
+morgan: {
+   mode: 'combined',
+   options: {stream: accessLogStream}
+   }
 }
 
 
 
-module.exports = eval(process.env.CODEIAL_ENVIRONMENT)==undefined ? devlopment : eval(process.env.CODEIAL_ENVIRONMENT);
+module.exports = eval(process.env.CODEIAL_ENVIRONMENT)==undefined ? development : eval(process.env.CODEIAL_ENVIRONMENT);
