@@ -1,0 +1,24 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(38, 38, 226, 0.774);
+  min-width: 500px; }
+  #header-container #heading {
+    margin-top: 14px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white; }
+  #header-container .auto-links {
+    margin-top: 14px; }
+    #header-container .auto-links ul {
+      margin: 5% 5px;
+      display: flex;
+      list-style: none; }
+      #header-container .auto-links ul li {
+        font-size: 1.5rem;
+        margin-right: 10px; }
+  #header-container a {
+    color: white;
+    text-decoration: none; }
