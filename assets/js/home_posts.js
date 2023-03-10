@@ -1,5 +1,3 @@
-
-
 {
    //method to submit the form using AJAX
     let createPost = function(){
